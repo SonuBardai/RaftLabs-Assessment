@@ -1,0 +1,36 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+}
+.layer {
+    background: rgba(0, 0, 0, 0.427);
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.bgImg {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.assessmentHead {
+    position: absolute;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: translate(8vw, 40vh);
+    transition: 0.5s;
+}
+.layer:hover > .assessmentHead-2 {
+    transform: translate(12vw, 40vh) scale(1.04);
+}
+.layer:hover > .assessmentHead-1 {
+    transform: translate(8vw, 40vh) scale(1.04);
+}
+.assessmentHead-2 {
+    transform: translate(12vw, 40vh);
+}

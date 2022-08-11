@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+
+:root {
+    --bg-1: #11171d;
+    --bg-2: #202731;
+    --text: #edf8ac;
+    --text-1: #f27f0c;
+    --text-2: #f26c0c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    background: var(--bg-2);
+    color: var(--text);
+
+    font-family: "Roboto Mono", monospace;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.floating {
+    transition: "0.4s";
+    animation: floating 4000ms ease-in-out infinite forwards;
+}
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 8px);
+    }
+}
+.fadeUp {
+    opacity: 0;
+    animation: fadeUpAn 500ms ease-in 1 normal forwards;
+}
+@keyframes fadeUpAn {
+    from {
+        opacity: 0;
+        transform: translate(0, 8%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.fadeDown {
+    opacity: 0;
+    animation: fadeDownAn 500ms ease-in 1 normal forwards;
+}
+@keyframes fadeDownAn {
+    from {
+        opacity: 0;
+        transform: translate(0, -8%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.fadeLeft {
+    opacity: 0;
+    animation: fadeLeftAn 500ms ease-in 1 normal forwards;
+}
+@keyframes fadeLeftAn {
+    from {
+        opacity: 0;
+        transform: translate(-6%, 0%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.fadeRight {
+    opacity: 0;
+    animation: fadeRightAn 500ms ease-in 1 normal forwards;
+}
+@keyframes fadeRightAn {
+    from {
+        opacity: 0;
+        transform: translate(6%, 0%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }

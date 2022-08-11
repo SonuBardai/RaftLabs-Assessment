@@ -1,0 +1,33 @@
+.navContainer {
+    background: linear-gradient(rgb(22, 23, 26), var(--bg-1));
+}
+.homeIcon {
+    width: 32px;
+    height: 32px;
+    color: var(--text-1);
+    transition: 0.4s;
+}
+.homeIcon:hover {
+    color: var(--text);
+}
+.headLineText {
+    font-size: 22px;
+    text-align: center;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap");
+.sonuB {
+    font-weight: 900;
+    color: #eb9f09;
+    text-decoration: underline;
+    text-decoration-color: #128ea5;
+    font-family: "Poppins", sans-serif;
+}
+.sonuB:hover {
+    color: #eb9f09;
+    text-decoration-color: #128ea5;
+}

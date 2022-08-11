@@ -1,0 +1,36 @@
+.boardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    border: 12px solid var(--text-2);
+    border-radius: 12px;
+}
+.board {
+    display: flex;
+    background: #edf8ac;
+    width: calc(74px * 8);
+    height: calc(74px * 8);
+    border-radius: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.board > div > div {
+    height: 74px;
+    width: 74px;
+}
+.black {
+    background: var(--bg-1);
+}
+.black-edge-1 {
+    background: var(--bg-1);
+    border-radius: 0 0 0 12px;
+}
+.black-edge-2 {
+    background: var(--bg-1);
+    border-radius: 0 12px 0 0;
+}
+.selected {
+    background: #4cb944;
+}
